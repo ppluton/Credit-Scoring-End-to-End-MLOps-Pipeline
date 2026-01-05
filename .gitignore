@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# MLFlow
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Data (optionnel si gros fichiers)
+data/*.csv
+!data/sample_submission.csv
+data/*.pkl
+
+# Models
+models/*.pkl
+models/*.joblib
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
