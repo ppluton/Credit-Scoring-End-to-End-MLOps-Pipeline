@@ -24,9 +24,14 @@ data/*.pkl
 models/*.pkl
 models/*.joblib
 
+# Artifacts de production (NE PAS ignorer)
+!artifacts/
+
 # IDE
 .vscode/
 .idea/
+.claude/
+.clinerules/
 *.swp
 
 # OS
