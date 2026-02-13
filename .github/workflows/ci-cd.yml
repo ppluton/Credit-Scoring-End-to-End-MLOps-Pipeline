@@ -19,10 +19,10 @@ jobs:
         run: uv python install 3.11
 
       - name: Install dependencies
-        run: uv sync --dev
+        run: uv sync --extra dev
 
       - name: Lint with ruff
-        run: uv run ruff check .
+        run: uv run ruff check . --exclude notebooks,data,artifacts,mlruns
 
       - name: Run tests
         run: uv run pytest tests/ -v --tb=short
